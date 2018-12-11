@@ -1,6 +1,6 @@
 package modelo;
 
-public class Xyz {
+public class MyClass {
 	// Objetivos 1 y 2
 
 	}
