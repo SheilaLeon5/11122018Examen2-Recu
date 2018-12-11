@@ -28,11 +28,12 @@ public class Objetivos {
 	
 	//apartado4.
 	
-	//PENDIENTEEEEEEEEEEEEEEEEE
 	 public int dividirDosNumeros (int a, int b) {
-		 int resultado = a-b;
-		 while(resultado != 0) {
-			 resultado = a-b; 
+		 int resta = a-b;
+		 int resultado;
+		 while(resta != 0) {
+			 resultado = a-b;
+			 a = resultado;
 		 }
 		return b;
 	 }
