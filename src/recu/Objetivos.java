@@ -29,13 +29,12 @@ public class Objetivos {
 	//apartado4.
 	
 	 public int dividirDosNumeros (int a, int b) {
-		 int resta = a-b;
 		 int resultado;
-		 while(resta != 0) {
+		 while(a-b != 0) {
 			 resultado = a-b;
 			 a = resultado;
 		 }
-		return b;
+		return 0;
 	 }
 	
 	//apartado5.
@@ -43,11 +42,12 @@ public class Objetivos {
 		 Datos dato= new Datos();
 		 int[][] golesJornadasEquipos = dato.getGolesJornadasEquipos();
 		 String[] equipos = dato.getEquipos();
-		 for (int j = 0; j < equipos.length; j++) {
-			 int acumulado = 0;
-			for (int i = 0; i < equipos[0].length(); i++) {
+		 for (int j = 0; j < golesJornadasEquipos[0].length; j++) {
+			int acumulado = 0;
+			for (int i = 0; i < golesJornadasEquipos.length; i++) {
 				acumulado += golesJornadasEquipos[i][j];
-				System.out.println(equipos[j] + ":" + acumulado);
+				System.out.println(equipos[i] + ":" + acumulado);
+				
 			}
 		}
 	 }
