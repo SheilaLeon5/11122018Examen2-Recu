@@ -29,15 +29,15 @@ public class Objetivos {
 	
 	//apartado4.
 	
-/*	 public int dividirDosNumeros (int a, int b) {
-		 int resultado;
-		 while(a-b != 0) {
+	 public int dividirDosNumeros (int a, int b) {
+		 int resultado = 0;
+		 while(a > b) {
 			 resultado = a-b;
 			 a = resultado;
 		 }
-		return a-b;
-	 }  probar 27/3*/
-	
+		 System.out.println(resultado);
+		return resultado;
+	 } 
 	
 	//apartado5.
 	 public void listaGolesJornada() {
@@ -84,12 +84,12 @@ public class Objetivos {
 		//objetivo.listaGoles();
 		
 		//apartado 4.
-		// int resultado4 = objetivo.dividirDosNumeros(10,9);
+		 //int resultado4 = objetivo.dividirDosNumeros(64,5);
 		 
 		 //apartado 5.
 		 //objetivo.listaGolesJornada();
 		 
 		 //apartos 6.
-		MyClass[] resultado6 = objetivo.creaObjetosMyClass(2);
+		//MyClass[] resultado6 = objetivo.creaObjetosMyClass(2);
 	}
 }
