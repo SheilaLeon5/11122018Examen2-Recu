@@ -12,6 +12,7 @@ public class Objetivos {
 	//apartado 3.
 	public void listaGoles() {
 		Datos dato= new Datos();
+		String[] jornadas = dato.getJornadas();
 		 int[][] golesJornadasEquipos = dato.getGolesJornadasEquipos();
 		 for (int i = 0; i < golesJornadasEquipos.length; i++) {
 			 int acumulado = 0;
@@ -20,7 +21,7 @@ public class Objetivos {
 				acumulado += golesJornadasEquipos[i][j];
 				
 			}
-			//System.out.println("Fecha " + i + ":" + acumulado );
+			System.out.println(jornadas[i] + ":" + acumulado );
 		}
 		 
 		
@@ -28,14 +29,15 @@ public class Objetivos {
 	
 	//apartado4.
 	
-	 public int dividirDosNumeros (int a, int b) {
+/*	 public int dividirDosNumeros (int a, int b) {
 		 int resultado;
 		 while(a-b != 0) {
 			 resultado = a-b;
 			 a = resultado;
 		 }
-		return 0;
-	 }
+		return a-b;
+	 }  probar 27/3*/
+	
 	
 	//apartado5.
 	 public void listaGolesJornada() {
@@ -45,10 +47,9 @@ public class Objetivos {
 		 for (int j = 0; j < golesJornadasEquipos[0].length; j++) {
 			int acumulado = 0;
 			for (int i = 0; i < golesJornadasEquipos.length; i++) {
-				acumulado += golesJornadasEquipos[i][j];
-				System.out.println(equipos[i] + ":" + acumulado);
-				
+				acumulado += golesJornadasEquipos[i][j];	
 			}
+			System.out.println(equipos[j] + ":" + acumulado);
 		}
 	 }
 	 
@@ -59,7 +60,7 @@ public class Objetivos {
 		  MyClass[] array= new MyClass[n];
 		  int i=0;
 		 while(i < n) {
-			array[i] = new MyClass();
+			array[i++] = new MyClass();
 		 }
 		return array;
 	 }
@@ -80,16 +81,15 @@ public class Objetivos {
 		
 		//apartado 3.
 		Objetivos objetivo= new Objetivos();
-		objetivo.listaGoles();
+		//objetivo.listaGoles();
 		
 		//apartado 4.
-		 int resultado4 = objetivo.dividirDosNumeros(27,9);
+		// int resultado4 = objetivo.dividirDosNumeros(10,9);
 		 
 		 //apartado 5.
-		 objetivo.listaGolesJornada();
+		 //objetivo.listaGolesJornada();
 		 
 		 //apartos 6.
-		 
 		MyClass[] resultado6 = objetivo.creaObjetosMyClass(2);
 	}
 }
